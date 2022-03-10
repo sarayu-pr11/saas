@@ -1,0 +1,234 @@
+<!-- Custom file for standardizing Project Data
+This HTML is set up as a Jinja2 layout, coders use layouts for:
+ ... standardization of style
+ ... setting expectations for data
+ ... code reuse
+-->
+
+<!-- super fun link that is a pretty cool background :) https://i.pinimg.com/originals/d7/41/1f/d7411f4345380a690ed0f359b35f8106.png
+
+   4am study wallpaper:
+    https://cdn.shopify.com/s/files/1/0011/6005/2795/articles/169_2.png?v=1621260321
+   -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+{%  set basename = "Study.Calm" %}
+<!-- main wallpaper: https://wallpapercave.com/wp/wp8422895.jpg lofi girl wallpaper: https://thumbs.gfycat.com/LastDampGhostshrimp-size_restricted.gif -->
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        html, body{
+            margin: 0;
+            height: 100%;
+            background-image:url('https://wallpapercave.com/wp/wp8422895.jpg');
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position:100% 100%;
+            min-height:100%;
+            min-width:100%;
+            background-size:cover;
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: white;
+            font-family: "Trebuchet MS";
+
+        }
+
+        h1{
+            font-size: 5em;
+            font-family:'Monotype Corsiva';
+            color:ghostwhite;
+        }
+        .button1 {border-radius: 8px;}
+        .button2 {border-radius: 8px;}
+        .button3 {border-radius: 8px;}
+        .button4 {border-radius: 8px;}
+
+
+    </style>
+    {% block meta %}
+    {% endblock %}
+
+    <title>{{ basename }} | {{ project }} </title>
+
+</head>
+
+<body>
+
+{% include "layouts/navbar.html" %}
+
+{% block body %}
+
+
+    <div class="product" style="margin-top: 2%;" >
+    <div class="row" style="padding: 0% 10% 5%;">
+
+    <div class="col-8" >
+
+    </div>
+
+    </div>
+    </div>
+
+{% endblock %}
+</body>
+
+{% block background %}
+
+
+
+
+
+
+
+
+    <div class="product" style="margin-top: 2%;">
+        <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+            <div class="w3-container">
+                <h1 class="w3-animate-top" style="font-size: 100px; font-family: Trebuchet MS;  text-shadow: 2px 4px 4px rgb(194,109,23); text-shadow: black;">Welcome to Study.Calm!</h1>
+            </div>
+
+            <title>W3.CSS</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <div class="w3-container"> </div>
+
+        </div>
+
+<br><br>
+
+        <div class="col-md-12 text-center" style="font-family: Trebuchet MS;">
+            <a class="button button1" href={{ url_for('music') }}>Music</a>
+            <a class="button button2" href={{ url_for('hwtimer') }}>Homework timer</a>
+            <a class="button button3" href={{ url_for('kamryn_blueprint.reminders') }}>Homework Reminders</a>
+            <a class="button button4" href={{ url_for('sarayu_blueprint.wheel') }}>Healthy food options</a>
+        </div>
+
+        <h3 style="color: white; margin: 2%; text-align: center; text-shadow: black;">Welcome to Study.Calm's website! Fifi the flamingo will take you to anywhere you want on the website, and give study tips and information about each page! </h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img style="text-align: center" src="/static/assets/flamingo.gif"  height="300" width="300">
+                <img style="text-align: center" src="/static/assets/speech.png"  height="275" width="290">
+            </div>
+        </div>
+
+
+
+    <!-- <img src="https://c.tenor.com/4otr5S3l1agAAAAj/dancing-duckdancing.gif" width="82" height="100"> -->
+
+        <br> <br> <br> <br> <br> <br>
+    </div>
+
+    <div style="background-color: white">
+        <br>
+    </div>
+    <div style="color: white; text-align: center; background-image:url('https://thumbs.gfycat.com/LastDampGhostshrimp-size_restricted.gif'); background-repeat:no-repeat; background-attachment:fixed; background-position:100% 100%; background-size:cover;">
+<br> <br> <br> <br> <br> <br>
+
+    <h1 style="font-family: Trebuchet MS;">The Ultimate Study Buddy!</h1>
+
+<br> <br> <br> <br> <br> <br>
+
+    <!--<p style="text-align: left; margin: 10px; background-color: rgba(0,0,0,0.4); color: #ffffff">N.A.R.K.S is here to help you and your studies!</p> -->
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+
+
+    </html>
+
+
+    <div style="background-color: white">
+        <br>
+    </div>
+    <div style="color: white; text-align: center; background-image:url('https://64.media.tumblr.com/0d2bb0b845da02c3242d55f6fc2bd4b3/tumblr_ovmsbvaPai1ro1qj8o1_1280.png'); background-repeat:no-repeat; background-attachment:fixed; background-position:100% 100%; background-size:cover;">
+
+        <br> <br> <br> <br> <br> <br>
+
+        <h1 style="font-family: Trebuchet MS;">For Late Night Studying!</h1>
+
+        <br> <br> <br> <br> <br> <br>
+
+        <!--<p style="text-align: left; margin: 10px; background-color: rgba(0,0,0,0.4); color: #ffffff">N.A.R.K.S is here to help you and your studies!</p> -->
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+
+
+    <div style="background-color: white">
+        <br>
+    </div>
+    <div style="color: white; text-align: center; background-image:url('https://cdn.shopify.com/s/files/1/0011/6005/2795/articles/0aad111596e3c2496b0b15f6089f3234.jpg?v=1616074390'); background-repeat:no-repeat; background-attachment:fixed; background-position:100% 100%; background-size:cover;">
+        <br> <br> <br> <br> <br> <br>
+
+        <h1 style="font-family: Trebuchet MS;">Or Just Relaxing!</h1>
+
+        <br> <br> <br> <br> <br> <br>
+
+        <!--<p style="text-align: left; margin: 10px; background-color: rgba(0,0,0,0.4); color: #ffffff">N.A.R.K.S is here to help you and your studies!</p> -->
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+
+
+    <style>
+        *{
+            font-family: Trebuchet MS;
+        }
+        .button {
+            background-color: #e59c6f; /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.2s;
+            font-family: Trebuchet MS
+        }
+
+        .button1 {padding: 14px 40px; width: 23%}
+        .button2 {padding: 14px 40px; width: 23%}
+        .button3 {padding: 14px 40px; width: 23%}
+        .button4 {padding: 14px 40px; width: 23%}
+
+        .button:hover {
+            background-color: #f9ece7;
+            color: #44312b;
+        }
+
+    </style>
+
+
+
+    <!--
+    HTML BACKGROUND URLS
+
+    https://c.tenor.com/gMUrkefHcdwAAAAC/seerlight-aesthetic.gif
+
+    https://linkstorage.linkfire.com/medialinks/images/c184fcdd-ad1d-4a70-84dd-48603bdd4722/artwork-600x315.jpg
+
+
+
+
+    -->
+
+
+
+
+
+    </body>
+
+
+{% endblock %}
