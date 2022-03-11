@@ -14,6 +14,8 @@ Create a website that provides information for and assists in evacuations for De
 * checklist for items to carry during evacuation
 * attendance page that has pictures of all students in the class; highlights green on click if student present; highlights red if absent; sends screenshot of page to administration
 
+# [Project Wireframe](https://docs.google.com/presentation/d/1PfpdldJw-pYkluDR6k0ImZSDCCed3SaM_EN9-EdBfwE/edit?usp=sharing)
+
 # Team Roles
 **Scrum Master: Arushi**
 - Ensure roles are assigned.  Build Scrum Board.  
