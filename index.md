@@ -13,7 +13,11 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 * checklist for items to carry during evacuation
 * attendance page that has pictures of all students in the class; highlights green on click if student present; highlights red if absent; sends screenshot of page to administration
 
-# [Project Wireframe](https://docs.google.com/presentation/d/1PfpdldJw-pYkluDR6k0ImZSDCCed3SaM_EN9-EdBfwE/edit?usp=sharing)
+# Project Wireframe
+![image](https://user-images.githubusercontent.com/89221238/157950756-34b3a1a0-edb9-4ca9-8305-ad2c6826b083.png)
+![image](https://user-images.githubusercontent.com/89221238/157950909-c448df25-24e4-4b4a-aeaf-548d7cbbf3cd.png)
+
+
 
 # Team Roles
 **Scrum Master: Arushi**
