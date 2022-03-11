@@ -20,15 +20,17 @@
 <a href="https://github.com/sarayu-pr11" target="_blank">sarayu-pr11</a>
 </td>
 <td>
-<a href="" target="_blank">Tasks</a>
+<a href="https://github.com/sarayu-pr11/saas/issues/assigned/sarayu-pr11" target="_blank">Tasks</a>
 </td>
-<td>
-<td>
+  <td>  <a href="https://github.com/sarayu-pr11/saas/projects/1" target="_blank">Scrum Board</a></td>
+<td>  <a href="https://github.com/sarayu-pr11/saas/commits?author=sarayu-pr11" target="_blank">Commits</a>
+
 </td>
-<td>
+<td>  <a href="https://sarayu-pr11.github.io/Sarayutri1/
+" target="_blank">Github Page</a>
+
 </td>
 </tr>
-
 <tr>
 <td>Arushi</td>
 <td>
