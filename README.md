@@ -32,16 +32,19 @@
 <tr>
 <td>Arushi</td>
 <td>
-  <a href="https://github.com/arushi10/individual" target="_blank">arushi10</a>
+  <a href="https://github.com/arushi10" target="_blank">arushi10</a>
 </td>
 <td>
 <a href="https://github.com/sarayu-pr11/saas/issues?q=is%3Aopen+assignee%3A%40me" target="_blank">Tasks</a>
 </td>
 <td>
+  <a href="https://github.com/arushi10" target="_blank">Scrum Board</a>
 </td>
 <td>
+  <a href="https://github.com/sarayu-pr11/saas/commits?author=arushi10" target="_blank">Commits</a>
 </td>
 <td>
+  <a href="https://github.com/arushi10/individual" target="_blank">Github Page</a>
 </td>
 
 </tr>
