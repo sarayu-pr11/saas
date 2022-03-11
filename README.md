@@ -84,14 +84,15 @@
   </td>
   
 <td>
-  <a href=" <a href="https://github.com/sarayu-pr11/saas/issues?q=assignee%3AAadyaDaita+is%3Aopen" target="_blank">Scrum Board</a>
-" target="_blank">Tasks</a>
- 
-  
+  <a href=" <a href="https://github.com/sarayu-pr11/saas/issues?q=assignee%3AAadyaDaita+is%3Aopen">Scrum Board</a>
+
 </td>
+  <td>
+    <a href=" <a href="https://github.com/sarayu-pr11/saas/commits?author=AadyaDaita">Commits</a>                                                                                              
+  </td>                                                                                                
+                                                                                                  
 <td>
   <a href=" <a href=" https://aadyadaita.github.io/indiv_repo/" target="_blank">Individual Repo</a>
   
   </td>
-<td>
-  </td>
+
