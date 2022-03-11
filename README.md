@@ -1,6 +1,6 @@
 # Team SAAS Readme
-## [Scrum Board](https://github.com/arushi10/saas/projects/1)
-## [Github Repository](https://github.com/arushi10/saas)
+## [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
+## [Github Repository](https://github.com/sarayu-pr11/saas)
 
 ***
 <table id="readmeinformation">
@@ -32,8 +32,10 @@
 <tr>
 <td>Arushi</td>
 <td>
+  <a href="https://github.com/arushi10/individual" target="_blank">arushi10</a>
 </td>
 <td>
+<a href="https://github.com/sarayu-pr11/saas/issues?q=is%3Aopen+assignee%3A%40me" target="_blank">Tasks</a>
 </td>
 <td>
 </td>
