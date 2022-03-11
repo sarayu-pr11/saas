@@ -72,15 +72,26 @@
 <td></td>
 </tr>
 
+
 <tr>
 <td>Aadya</td>
 <td>
+  <a href="https://github.com/AadyaDaita" target="_blank">AadyaDaita</a>
+</td>
+
+   <td>
+    <a href="https://github.com/sarayu-pr11/saas/issues?q=assignee%3AAadyaDaita+is%3Aopen" target="_blank">Tasks</a>
+  </td>
+  
+<td>
+  <a href=" <a href="https://github.com/sarayu-pr11/saas/issues?q=assignee%3AAadyaDaita+is%3Aopen" target="_blank">Scrum Board</a>
+" target="_blank">Tasks</a>
+ 
+  
 </td>
 <td>
-</td>
-<td>
-</td>
-<td>
+  <a href=" <a href=" https://aadyadaita.github.io/indiv_repo/" target="_blank">Individual Repo</a>
+  
   </td>
 <td>
   </td>
