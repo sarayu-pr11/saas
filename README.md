@@ -38,13 +38,13 @@
 <a href="https://github.com/sarayu-pr11/saas/issues?q=is%3Aopen+assignee%3A%40me" target="_blank">Tasks</a>
 </td>
 <td>
-  <a href="https://github.com/arushi10" target="_blank">Scrum Board</a>
+  <a href="https://github.com/sarayu-pr11/saas/projects/1" target="_blank">Scrum Board</a>
 </td>
 <td>
   <a href="https://github.com/sarayu-pr11/saas/commits?author=arushi10" target="_blank">Commits</a>
 </td>
 <td>
-  <a href="https://github.com/arushi10/individual" target="_blank">Github Page</a>
+  <a href="https://arushi10.github.io/individual/" target="_blank">Github Page</a>
 </td>
 
 </tr>
