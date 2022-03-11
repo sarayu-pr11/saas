@@ -1,8 +1,7 @@
 {% include navigation.html %}
 
-# Project Description
-Create a website that provides information for and assists in evacuations for Del Norte. 
-
+# Project Description Team SAAS
+Our goal this trimester with our website is to make a helpful and viable alternative to phyiscal manuals during an evacuation. We hope to convert all paper necessities into an online format as well as add other pages that would make evacuating on short notice easier. Overall, we hope to make the hassle of evacuation as simple and least stressful as possible.
 
 # Project Plans
 * information pages for each type of disaster
