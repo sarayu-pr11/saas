@@ -62,11 +62,12 @@
   <a href="https://github.com/sarayu-pr11/saas/projects/1" target="_blank">Scrum Board</a>
 </td>
 <td>
-  <a href="https://github.com/sarayu-pr11/saas/commits?author=arushi10" target="_blank">Commits</a>
+  <a href="https://github.com/sarayu-pr11/saas/commits?author=saumyapalk23" target="_blank">Commits</a>
 </td>
 <td>
-  <a href="https://arushi10.github.io/individual/" target="_blank">Github Page</a>
+  <a href="https://saumyapalk23.github.io/Saumya-Palakodety-Trimester-3-/" target="_blank">Github Page</a>
 </td>
+
 
 
 <td></td>
