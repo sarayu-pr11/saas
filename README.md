@@ -95,4 +95,4 @@
 <td>
  <a href="https://aadyadaita.github.io/indiv_repo/" target="_blank">Github Page</a> 
 </td>
-
+</table>
