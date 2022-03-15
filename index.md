@@ -3,7 +3,7 @@
 # Project Description Team SAAS
 Our goal this trimester with our website is to make a helpful and viable alternative to phyiscal manuals during an evacuation. We hope to convert all paper necessities into an online format as well as add other pages that would make evacuating on short notice easier. Overall, we hope to make the hassle of evacuation as simple and least stressful as possible.
 
-# Project Plans
+# Project Plans/Project Owner Requirements
 * information pages for each type of disaster
 * quizzes to test your knowledge about each disaster
 * have interactive maps for evacuation routes
@@ -37,6 +37,8 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 
 # Project Owner/Sponsor   
 Mr. Mortensen
+
+Email: jmortensen@powayusd.com
 
 # Flowchart
 ![**Wireframe Flowchart**](https://user-images.githubusercontent.com/89221238/157815788-67150847-9d7d-43a4-b94d-64b914f787cf.png)
