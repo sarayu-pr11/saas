@@ -1,5 +1,5 @@
 {% include navigation.html %}
- #### <table>
+<table>
   <tr>
     <td> Team Roles </td>
     <td> Description </td>
