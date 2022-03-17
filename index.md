@@ -21,6 +21,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
   </tr>
   </table>
   
+  
   # Project History
   <table>
   <tr>
