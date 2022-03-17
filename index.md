@@ -22,7 +22,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
   </table>
   
   
-  # Project History
+ # Project History
   <table>
   <tr>
     <td> Week</td>
