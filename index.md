@@ -6,7 +6,16 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 # [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
 
 # Review Tickets
-| Week | Link to Review Ticket |
-|-------|--------|---------|
-| Week 0 | N/A |
-| Week 1 | [Week 1 Review Ticket](https://github.com/sarayu-pr11/saas/projects/1#card-79290897) |
+<table>
+  <tr>
+    <td> Week</td>
+    <td> Link to Review Ticket </td>
+  </tr>
+  <tr>
+    <td> Week 0 </td>
+    <td> N/A </td>
+  </tr>
+  <tr>
+    <td> Week 1 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79290897">Ticket</a></td>
+  </tr>
