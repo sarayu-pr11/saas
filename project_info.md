@@ -14,3 +14,7 @@
 Mr. Mortensen
 
 Email: jmortensen@powayusd.com
+
+Slack: @John Mortensen
+
+[Github](https://github.com/nighthawkcoders/nighthawk_csp) 
