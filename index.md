@@ -19,3 +19,20 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 1 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79290897">Ticket</a></td>
   </tr>
+  </table>
+  
+  # Project History
+  <table>
+  <tr>
+    <td> Week</td>
+    <td> Description </td>
+  </tr>
+  <tr>
+    <td> Week 0 </td>
+    <td> Project Description, Wireframes, Team Roles, Project Owner, Scrum Board started </td>
+  </tr>
+  <tr>
+    <td> Week 1 </td>
+    <td> Project Owner inititial requirements + contact info, Designs, Assigned tasks on Scrumboard, In-progress Scrumboard tasks </td>
+  </tr>
+  </table>
