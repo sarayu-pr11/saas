@@ -1,3 +1,5 @@
+{ % include navigation.html %}
+
 # Project Planning Iterations
 
 ## Week 0 Brain Write
