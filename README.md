@@ -68,9 +68,6 @@
   <a href="https://saumyapalk23.github.io/Saumya-Palakodety-Trimester-3-/" target="_blank">Github Page</a>
 </td>
 
-
-
-<td></td>
 </tr>
 
 
