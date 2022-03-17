@@ -1,6 +1,6 @@
 # Project Planning Iterations
 
-## Week 0 Flowchart
+## Week 0 Brain Write
 
 This flowchart was created in 03/08/22 after discussing project ideas as a group.
 
