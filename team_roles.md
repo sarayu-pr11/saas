@@ -1,4 +1,19 @@
 {% include navigation.html %}
+# Team Members
+<table>
+  <tr>
+    <td> Arushi </td>
+    <td> Saumya </td>
+    <td> Aadya </td>
+    <td> Sarayu </td>
+  </tr>
+  <tr>
+    <td><a href="https://arushi10.github.io/individual/">Link</a></td>
+    <td><a href="https://saumyapalk23.github.io/Saumya-Palakodety-Trimester-3-/">Link</a></td>
+    <td><a href="https://aadyadaita.github.io/indiv_repo/index">Link</a></td>
+    <td><a href="https://sarayu-pr11.github.io/sarayu_individual/">Link</a></td>
+  </tr>
+ </table>
 <table>
   <tr>
     <td> Team Roles </td>
