@@ -37,3 +37,20 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Project Owner inititial requirements + contact info, Designs, Assigned tasks on Scrumboard, In-progress Scrumboard tasks </td>
   </tr>
   </table>
+  
+  
+  # Project Owner Meetings
+    <table>
+  <tr>
+    <td> Date</td>
+    <td> Suggestions </td>
+  </tr>
+  <tr>
+    <td> 03/08/22 </td>
+    <td> Presented project idea, asked for project owner suggestions, looked through red bag </td>
+  </tr>
+  <tr>
+    <td> 03/17/22 </td>
+    <td> Presented team Github Page to project owner, added designs, better organized team roles information </td>
+  </tr>
+  </table>
