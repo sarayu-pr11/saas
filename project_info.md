@@ -1,6 +1,7 @@
 {% include navigation.html %}
 # [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
 # Project Plans/Project Owner Requirements
+* login page
 * information pages for each type of disaster
 * quizzes to test your knowledge about each disaster
 * have interactive maps for evacuation routes
