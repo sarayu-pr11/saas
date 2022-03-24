@@ -64,6 +64,6 @@ Our goal this trimester with our website is to make a helpful and viable alterna
   
    <tr>
     <td> 03/24/22 </td>
-    <td> PII concerns - create a log-in page as an authentication factor, Hosting plan - deploy on Mr. Mortensen's home machines, Software license - GNU General Public License v3.0 (derivatives of our work can be created with no restrictions) </td>
+    <td> PII concerns/data privacy - create a log-in page as an authentication factor, Hosting plan - deploy on Mr. Mortensen's home machines, Software license - GNU General Public License v3.0 (derivatives of our work can be created with no restrictions),  </td>
   </tr>
   </table>
