@@ -19,6 +19,10 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 1 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79290897">Ticket</a></td>
   </tr>
+    <tr>
+    <td> Week 2 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79630639">Ticket</a></td>
+  </tr>
   </table>
   
 
@@ -36,6 +40,10 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 1 </td>
     <td> Project Owner inititial requirements + contact info, Designs, Assigned tasks on Scrumboard, In-progress Scrumboard tasks </td>
   </tr>
+    <tr>
+    <td> Week 2 </td>
+    <td> Project Owner presentation, results of review, PII concerns, hosting plan, software license, 1st code </td>
+  </tr>
   </table>
   
 
@@ -52,5 +60,10 @@ Our goal this trimester with our website is to make a helpful and viable alterna
   <tr>
     <td> 03/17/22 </td>
     <td> Presented team Github Page to project owner, added designs, better organized team roles information </td>
+  </tr>
+  
+   <tr>
+    <td> 03/24/22 </td>
+    <td> PII concerns - create a log-in page as an authentication factor, Hosting plan - deploy on Mr. Mortensen's home machines, Software license - GNU General Public License v3.0 (derivatives of our work can be created with no restrictions) </td>
   </tr>
   </table>
