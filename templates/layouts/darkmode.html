@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis:400,600'>
+    <link rel='stylesheet' href="\style\darkmode.css">
+
+</head>
+
+<button class="switch" id="darklight" onclick="dark()" data-switch-dark>
+    Light
+</button>
+
+<body>
+
+
+
+<script>
+    function dark() {
+        var x = document.getElementById("darklight");
+        if (x.innerHTML === "Light") {
+            x.innerHTML = "Dark";
+        } else {
+            x.innerHTML = "Light";
+        }
+    }
+    // Switch Text from Light --> Dark when clicked to match the style
+
+    document.querySelector('[data-switch-dark]').addEventListener('click', function() {
+        document.body.classList.toggle('dark');
+    });
+    // matches page with darkmode css onclick
+
+</script>
+
+
+</body>
+<style>
+    .switch {
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        background-color: var(--color-black);
+        border: 0px solid var(--color-text);
+        color: var(--color-text);
+        text-align: center;
+        width: 60px;
+        height: 34px; }
+
+    button {
+        text-decoration: none; }
+</style>
+</html>
