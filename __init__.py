@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_login import LoginManager
 
 """This needs to be isolated to support blueprints and models"""
 # Setup of key Flask object (app)
@@ -15,7 +16,7 @@ Migrate(app, db)
 
 # Setup LoginManager object (app)
 # LoginManager lets application and Flask-Login work together
-# code: login_manager = LoginManager()
+login_manager = LoginManager()
 
 # Configure application for login
-# code: login_manager.init_app(app)
+login_manager.init_app(app)
