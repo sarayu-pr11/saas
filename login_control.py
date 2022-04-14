@@ -1,6 +1,6 @@
 """control dependencies to support CRUD app routes and APIs"""
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
-from query import *
+from cruddy.query import *
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_crud = Blueprint('crud', __name__,
@@ -41,7 +41,7 @@ def read():
         po = user_by_id(userid)
         if po is not None:
             table = [po.read()]  # placed in list for easier/consistent use within HTML
-    return render_template("crud.html", table=table)
+    return render_template("attendance_security_html/crud.html", table=table)
 
 
 # CRUD update
