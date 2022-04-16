@@ -31,12 +31,14 @@ def main_login() :
     # if not logged in, show the login page
     return render_template("student_security_html/login_student.html")
 
-
+"""
 # Flask-Login directs unauthorised users to this unauthorized_handler
 @login_manager.unauthorized_handler
 def unauthorized2() :
-    """Redirect unauthorized users to Login page."""
+    #Redirect unauthorized users to Login page.
     return redirect(url_for('student.main_login'))
+    
+    """
 
 @app_student.route('/authorize/', methods=["GET", "POST"])
 def main_authorize() :
