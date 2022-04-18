@@ -63,6 +63,10 @@ def crud_authorize():
     return render_template("attendance_security_html/authorize.html")
 
 
+def username():
+    user_name = request.form.get("user_name")
+    print(user_name)
+    return user_name
 
 @app_crud.route('/logout_aadya/')
 @login_required

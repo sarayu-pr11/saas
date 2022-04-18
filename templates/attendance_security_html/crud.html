@@ -13,16 +13,17 @@
 <!-- CONTENT (in <body>), content for this page -->
 {% block content %}
     <h1><a href={{ url_for('crud.crud_logout') }}> Log Out </a></h1>
+    <form action="/user_name_printing" id="translation" method="POST" >
+        {{ name }}
+    </form>
+
+    <center><h2> Aadya Daita is logged in</h2></center>
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom border-primary text-dark">
             <span class="fs-4">Teacher Admin Page</span>
         </header>
     </div>
     <div class="container py-4 text-light bg-success">
-
-
-
-
 
         <div class="container bg-secondary py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
