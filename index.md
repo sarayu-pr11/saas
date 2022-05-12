@@ -44,7 +44,33 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 2 </td>
     <td> Project Owner presentation, results of review, PII concerns, hosting plan, software license, 1st code </td>
   </tr>
-  </table>
+    <tr>
+    <td> Week 3 </td>
+    <td> Algorithmic Final crossover reviews </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 4 </td>
+    <td> Accounts and Logins live reviews </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 5 </td>
+    <td> Proctored MCQ Week1: Quiz1, Quiz2 Scores </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 6 </td>
+    <td> Quiz 3/Create Task Review Ticket </td>
+  </tr>
+    </tr>
+  </tr>
+    <tr>
+    <td> Week 7/8 </td>
+    <td> Create Task Final Submissions/Final AP Exam Preparation </td>
+  </tr>
+</table>
+  
   
 
 # Project Owner Meetings
