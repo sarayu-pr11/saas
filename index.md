@@ -5,7 +5,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 
 # [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
 
-# Review Tickets
+# Review Tickets (Milestone Weeks)
 <table>
   <tr>
     <td> Week</td>
@@ -22,8 +22,14 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <tr>
     <td> Week 2 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79630639">Ticket</a></td>
+    <tr>
+    <td> Week 5 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/issues/12#issue-1207866734">Ticket</a></td>
   </tr>
-  </table>
+    <tr>
+    <td> Week 8 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/issues/17#issue-1234342430">Ticket</a></td>
+</table>
   
 
 # Project Plans
@@ -44,7 +50,33 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 2 </td>
     <td> Project Owner presentation, results of review, PII concerns, hosting plan, software license, 1st code </td>
   </tr>
-  </table>
+    <tr>
+    <td> Week 3 </td>
+    <td> Algorithmic Final crossover reviews </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 4 </td>
+    <td> Accounts and Logins live reviews </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 5 </td>
+    <td> Proctored MCQ Week1: Quiz1, Quiz2 Scores </td>
+  </tr>
+  </tr>
+    <tr>
+    <td> Week 6 </td>
+    <td> Quiz 3/Create Task Review Ticket </td>
+  </tr>
+    </tr>
+  </tr>
+    <tr>
+    <td> Week 7/8 </td>
+    <td> Create Task Final Submissions/Final AP Exam Preparation </td>
+  </tr>
+</table>
+  
   
 
 # Project Owner Meetings
