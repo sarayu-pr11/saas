@@ -5,7 +5,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 
 # [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
 
-# Review Tickets
+# Review Tickets (Milestone Weeks)
 <table>
   <tr>
     <td> Week</td>
@@ -22,6 +22,14 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <tr>
     <td> Week 2 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79630639">Ticket</a></td>
+    <tr>
+    <td> Week 5 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/issues/12#issue-1207866734">Ticket</a></td>
+  </tr>
+    <tr>
+    <td> Week 8 </td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/issues/17#issue-1234342430">Ticket</a></td>
+   <tr>    
   </tr>
   </table>
   
