@@ -29,8 +29,6 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <tr>
     <td> Week 8 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/issues/17#issue-1234342430">Ticket</a></td>
-   <tr>    
-  </tr>
   </table>
   
 
