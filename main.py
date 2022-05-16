@@ -8,10 +8,6 @@ from cruddy.app_crud import app_crud
 app.register_blueprint(app_crud)
 
 
-from cruddy_student.app_crud import app_student
-app.register_blueprint(app_student)
-
-
 # Default URL for Blueprint
 @app.route('/')
 def index():
