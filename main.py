@@ -17,6 +17,10 @@ def index():
 def quiz():
     return render_template("quiz.html")
 
+@app.route('/attendance')
+def attendance():
+    return render_template("attendance_security_html/attendance.html")
+
 
 if __name__ == "__main__" :
     # runs the application on the repl development server
