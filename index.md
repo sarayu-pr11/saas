@@ -33,7 +33,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
   
 
 # Project Plans
-  <table>
+ <table>
   <tr>
     <td> Week</td>
     <td> Description </td>
@@ -78,9 +78,8 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 </table>
   
   
-
 # Project Owner Meetings
-   <table>
+ <table>
   <tr>
     <td> Date</td>
     <td> Suggestions </td>

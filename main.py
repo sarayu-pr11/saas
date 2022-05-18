@@ -8,10 +8,6 @@ from cruddy.app_crud import app_crud
 app.register_blueprint(app_crud)
 
 
-from cruddy_student.app_crud import app_student
-app.register_blueprint(app_student)
-
-
 # Default URL for Blueprint
 @app.route('/')
 def index():
@@ -20,6 +16,10 @@ def index():
 @app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
+
+@app.route('/attendance')
+def attendance():
+    return render_template("attendance_security_html/attendance.html")
 
 
 if __name__ == "__main__" :

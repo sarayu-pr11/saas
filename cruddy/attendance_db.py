@@ -1,4 +1,3 @@
-""" database dependencies to support Users db examples """
 from __init__ import db
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -71,22 +70,6 @@ class Users(UserMixin, db.Model):
         db.session.commit()
         return None
 
-    # set password method is used to create encrypted password
-    def set_password(self, password):
-        """Create hashed password."""
-        self.password = generate_password_hash(password, method='sha256')
-
-    # check password to check versus encrypted password
-    def is_password_match(self, password):
-        """Check hashed password."""
-        result = check_password_hash(self.password, password)
-        return result
-
-    # required for login_user, overrides id (login_user default) to implemented userID
-    def get_id(self):
-        return self.userID
-
-
 """Database Creation and Testing section"""
 
 
@@ -96,14 +79,14 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', phone="1111111111")
-    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', phone="1111112222")
-    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', phone="1111113333")
-    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', phone="1111114444")
-    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', phone="8587754956")
-    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8587754956")
+    u1 = Users(name='Jo Buehler', email='jbuehler@stu.powayusd.com', password='123toby', phone="8749207684")
+    u2 = Users(name='Melissa Darcey', email='mdarcey@stu.powayusd.com', password='123niko', phone="9064379065")
+    u3 = Users(name='Brianna West', email='bwest@stu.powayusd.com', password='123lex', phone="7924670983")
+    u4 = Users(name='Kenneth Ozuna', email='kozuna@stu.powayusd.com', password='123whit', phone="2684762094")
+    u5 = Users(name='Frank Liao', email='fliao@stu.powayusd.com', password='123qwerty', phone="8587754956")
+    u6 = Users(name='John Mortensen', email='jmortensen@stu.powayusd.com', password='123qwerty', phone="8587754956")
     # U7 intended to fail as duplicate key
-    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', phone="8586791294")
+    u7 = Users(name='James Lafferty', email='jlafferty@stu.powayusd.com', password='ur_mom', phone="8586791294")
     table = [u1, u2, u3, u4, u5, u6, u7]
     for row in table:
         try:
@@ -114,6 +97,7 @@ def model_tester():
             print(f"Records exist, duplicate email, or error: {row.email}")
 
 
+
 def model_printer():
     print("------------")
     print("Table: users with SQL query")
@@ -122,6 +106,7 @@ def model_printer():
     print(result.keys())
     for row in result:
         print(row)
+
 
 
 if __name__ == "__main__":
