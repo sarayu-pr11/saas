@@ -21,6 +21,10 @@ def quiz():
 def attendance():
     return render_template("attendance_security_html/attendance.html")
 
+@app.route('/maps')
+def maps():
+    return render_template("maps.html")
+
 
 if __name__ == "__main__" :
     # runs the application on the repl development server
