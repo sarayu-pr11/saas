@@ -13,7 +13,30 @@ This HTML is set up as a Jinja2 layout, coders use layouts for:
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        html, body{
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: #275934;
+            line-height: 2 ;
+            line-grid-mode: 2;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Bell MT";
+        }
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
         html, body{
             margin: 0;
             height: 100%;
@@ -31,13 +54,18 @@ This HTML is set up as a Jinja2 layout, coders use layouts for:
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             -o-animation: fadein 2s; /* Opera */
             background-color: white;
-            font-family: "Trebuchet MS";
+            font-family: "Bell MT";
 
+        }
+
+        body{
+            margin: 0;
+            font-family: "Bell MT";
         }
 
         h1{
             font-size: 5em;
-            font-family:'Monotype Corsiva';
+            font-family:'Bell MT';
             color:ghostwhite;
         }
         .button1 {border-radius: 8px;}

@@ -25,6 +25,11 @@ def attendance():
 def maps():
     return render_template("maps.html")
 
+@app.route('/saumyaaboutme')
+def saumyaaboutme():
+    return render_template("aboutus/saumyaaboutme.html")
+
+
 
 if __name__ == "__main__" :
     # runs the application on the repl development server
