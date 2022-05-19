@@ -1,37 +1,50 @@
-from __init__ import db
+""" database dependencies to support Users db examples """
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import UserMixin
+from flask_migrate import Migrate
 
+from __init__ import app
 
 # Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
+# Define variable to define type of database (sqlite), and name and location of myDB.db
+dbURI = 'sqlite:///model/myDB.db'
+# Setup properties for the database
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
+app.config['SECRET_KEY'] = 'SECRET_KEY'
+# Create SQLAlchemy engine to support SQLite dialect (sqlite:)
+db = SQLAlchemy(app)
+Migrate(app, db)
+
 
 # Define the Users table within the model
 # -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
-class Users(UserMixin, db.Model):
-    # define the Users schema
+class attend(db.Model):
+    # define the attend schema
     userID = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), unique=False, nullable=False)
-    email = db.Column(db.String(255), unique=True, nullable=False)
-    password = db.Column(db.String(255), unique=False, nullable=False)
-    phone = db.Column(db.String(255), unique=False, nullable=False)
+    fav_res = db.Column(db.String(255), unique=False, nullable=False)
+    fav_food = db.Column(db.String(255), unique=False, nullable=False)
+
+
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, name, email, password, phone):
+    def __init__(self, name, fav_res, fav_food):
         self.name = name
-        self.email = email
-        self.set_password(password)
-        self.phone = phone
+        self.fav_res = fav_res
+        self.fav_food = fav_food
+
+
 
     # CRUD create/add a new record to the table
     # returns self or None on error
     def create(self):
         try:
-            # creates a person object from Users(db.Model) class, passes initializers
-            db.session.add(self)  # add prepares to persist person object to Users table
+            # creates a person object from attend(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to attend table
             db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
             return self
         except IntegrityError:
@@ -44,22 +57,21 @@ class Users(UserMixin, db.Model):
         return {
             "userID": self.userID,
             "name": self.name,
-            "email": self.email,
-            "password": self.password,
-            "phone": self.phone,
-            "query": "by_alc"  # This is for fun, a little watermark
+            "fav_res": self.fav_res,
+            "fav_food": self.fav_food,
         }
 
-    # CRUD update: updates users name, password, phone
+    # CRUD update: updates attend name, res, food
     # returns self
-    def update(self, name, password="", phone=""):
+    def update(self, name, fav_res="", fav_food=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
-        if len(password) > 0:
-            self.set_password(password)
-        if len(phone) > 0:
-            self.phone = phone
+        if len(fav_res) > 0:
+            self.fav_res = fav_res
+        if len(fav_food) > 0:
+            self.fav_food = fav_food
+
         db.session.commit()
         return self
 
@@ -70,6 +82,7 @@ class Users(UserMixin, db.Model):
         db.session.commit()
         return None
 
+
 """Database Creation and Testing section"""
 
 
@@ -79,22 +92,18 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Jo Buehler', email='jbuehler@stu.powayusd.com', password='123toby', phone="8749207684")
-    u2 = Users(name='Melissa Darcey', email='mdarcey@stu.powayusd.com', password='123niko', phone="9064379065")
-    u3 = Users(name='Brianna West', email='bwest@stu.powayusd.com', password='123lex', phone="7924670983")
-    u4 = Users(name='Kenneth Ozuna', email='kozuna@stu.powayusd.com', password='123whit', phone="2684762094")
-    u5 = Users(name='Frank Liao', email='fliao@stu.powayusd.com', password='123qwerty', phone="8587754956")
-    u6 = Users(name='John Mortensen', email='jmortensen@stu.powayusd.com', password='123qwerty', phone="8587754956")
-    # U7 intended to fail as duplicate key
-    u7 = Users(name='James Lafferty', email='jlafferty@stu.powayusd.com', password='ur_mom', phone="8586791294")
-    table = [u1, u2, u3, u4, u5, u6, u7]
+    u1 = attend(name='Aadya Daita', fav_res='subway', fav_food='Italian')
+    u2 = attend(name='Athena Wu', fav_res='subway', fav_food='Italian')
+    u3 = attend(name='Gaurish Gaur', fav_res='subway', fav_food='Italian')
+    u4 = attend(name='Karthik Valluri', fav_res='subway', fav_food='Italian')
+
+    table = [u1, u2, u3, u4]
     for row in table:
         try:
             db.session.add(row)
             db.session.commit()
         except IntegrityError:
             db.session.remove()
-            print(f"Records exist, duplicate email, or error: {row.email}")
 
 
 
@@ -102,13 +111,12 @@ def model_printer():
     print("------------")
     print("Table: users with SQL query")
     print("------------")
-    result = db.session.execute('select * from users')
+    result = db.session.execute('select * from attend')
     print(result.keys())
     for row in result:
         print(row)
 
 
-
 if __name__ == "__main__":
-    model_tester()  # builds model of Users
+    model_tester()  # builds model of attend
     model_printer()
