@@ -1,12 +1,12 @@
-from flask import render_template, request, url_for, redirect
-from cruddy.query import *
-from __init__ import app
-from flask_login import login_required
+from flask import render_template
 
+from __init__ import app
 
 from cruddy.app_crud import app_crud
 app.register_blueprint(app_crud)
 
+from crud.app_crud import app_attend
+app.register_blueprint(app_attend)
 
 # Default URL for Blueprint
 @app.route('/')
@@ -17,9 +17,7 @@ def index():
 def quiz():
     return render_template("quiz.html")
 
-@app.route('/attendance')
-def attendance():
-    return render_template("attendance_security_html/attendance.html")
+
 
 @app.route('/maps')
 def maps():
@@ -34,3 +32,4 @@ def saumyaaboutme():
 if __name__ == "__main__" :
     # runs the application on the repl development server
     app.run(debug=True, port="5223")
+
