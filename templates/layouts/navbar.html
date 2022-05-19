@@ -493,8 +493,6 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-md navbar-light">
 
-                    <a class="navbar-brand" href="/" target="_blank"><img src="https://avchoiceenergy.com/wp-content/uploads/2016/12/yourCHOICE.png"></a>
-
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -506,7 +504,7 @@
 
                             <!-- search used:https://www.geeksforgeeks.org/how-to-add-custom-google-search-bar-inside-your-web-page/ -->
                             <script async src="https://cse.google.com/cse.js?cx=9fcb66c3c34c1675d"></script>
-                            <div class="gcse-search"></div>
+                            <div class="gcse-search" style="width: 100px"></div>
                             </p>
                         </ul>
                     </div>
@@ -525,16 +523,16 @@
                         <a class="nav-link" href={{ url_for('crud.crud') }}>Attendance</a>
                     </li>
 
+
                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/quiz">Quiz</a>
+                            <a class="dropdown-item" href="/maps">Interactive Map</a>
 
-                        <a class="nav-link" href="{{ url_for('quiz') }}">Quiz</a>
-                    </li>
-                    </li>
-                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 
-                        <a class="nav-link" href={{ url_for('maps') }}>Maps</a>
+                        </div>
                     </li>
-
 
                 </nav>
         </div>
