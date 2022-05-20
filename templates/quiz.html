@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% include "layouts/login_layout.html" %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,6 @@
 <body>
 <!-- start Quiz button -->
 <div class="start_btn"><button>Start Quiz</button></div>
-
 <!-- Info Box -->
 <div class="info_box">
     <div class="info-title"><span>Rules</span></div>
@@ -25,7 +25,6 @@
         <button class="restart">Continue</button>
     </div>
 </div>
-
 <!-- Quiz Box -->
 <div class="quiz_box">
     <header>
@@ -44,7 +43,6 @@
             <!-- Here I've inserted options from JavaScript -->
         </div>
     </section>
-
     <!-- footer of Quiz Box -->
     <footer>
         <div class="total_que">
@@ -53,7 +51,6 @@
         <button class="next_btn">Next Que</button>
     </footer>
 </div>
-
 <!-- Result Box -->
 <div class="result_box">
     <div class="icon">
@@ -68,16 +65,11 @@
         <button class="quit">Quit Quiz</button>
     </div>
 </div>
-
 <!-- Inside this JavaScript file I've inserted Questions and Options only -->
 <script src="js/questions.js"></script>
-
 <!-- Inside this JavaScript file I've coded all Quiz Codes -->
 <script src="js/script.js"></script>
-
 </body>
-
-<a style="background-color: #f9ecd9; color: #70579f; font-size: 30px;" class="nav-link" href={{ url_for('index') }}>Home</a>
 
 <style>
     /* importing google fonts */
@@ -88,7 +80,6 @@
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-
     body{
         background: #ffffff;
         background-image:url('https://www.lifehacker.com.au/content/uploads/sites/4/2020/12/10/qfzs9j1ebupbjkj2ul0v-scaled.jpg');
@@ -96,12 +87,10 @@
         background-attachment:fixed;
         background-size:cover;
     }
-
     ::selection{
         color: #fff;
         background: #70579f;
     }
-
     .start_btn,
     .info_box,
     .quiz_box,
@@ -113,7 +102,6 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
     .info_box.activeInfo,
     .quiz_box.activeQuiz,
     .result_box.activeResult{
@@ -122,7 +110,6 @@
         pointer-events: auto;
         transform: translate(-50%, -50%) scale(1);
     }
-
     .start_btn button{
         font-size: 25px;
         font-weight: 500;
@@ -134,7 +121,6 @@
         background: #fff;
         cursor: pointer;
     }
-
     .info_box{
         width: 540px;
         background: #fff;
@@ -144,7 +130,6 @@
         pointer-events: none;
         transition: all 0.3s ease;
     }
-
     .info_box .info-title{
         height: 60px;
         width: 100%;
@@ -156,16 +141,13 @@
         font-size: 20px;
         font-weight: 600;
     }
-
     .info_box .info-list{
         padding: 15px 30px;
     }
-
     .info_box .info-list .info{
         margin: 5px 0;
         font-size: 17px;
     }
-
     .info_box .info-list .info span{
         font-weight: 600;
         color: #70579f;
@@ -178,7 +160,6 @@
         padding: 0 30px;
         border-top: 1px solid lightgrey;
     }
-
     .info_box .buttons button{
         margin: 0 5px;
         height: 40px;
@@ -192,7 +173,6 @@
         border: 1px solid #70579f;
         transition: all 0.3s ease;
     }
-
     .quiz_box{
         width: 550px;
         background: #fff;
@@ -202,7 +182,6 @@
         pointer-events: none;
         transition: all 0.3s ease;
     }
-
     .quiz_box header{
         position: relative;
         z-index: 2;
@@ -215,12 +194,10 @@
         justify-content: space-between;
         box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
     }
-
     .quiz_box header .title{
         font-size: 20px;
         font-weight: 600;
     }
-
     .quiz_box header .timer{
         color: #b7475c;
         background: #ffcbd8;
@@ -233,13 +210,11 @@
         justify-content: space-between;
         width: 145px;
     }
-
     .quiz_box header .timer .time_left_txt{
         font-weight: 400;
         font-size: 17px;
         user-select: none;
     }
-
     .quiz_box header .timer .timer_sec{
         font-size: 18px;
         font-weight: 500;
@@ -253,7 +228,6 @@
         border: 1px solid #343a40;
         user-select: none;
     }
-
     .quiz_box header .time_line{
         position: absolute;
         bottom: 0px;
@@ -261,22 +235,18 @@
         height: 3px;
         background: #70579f;
     }
-
     section{
         padding: 25px 30px 20px 30px;
         background: #fff;
     }
-
     section .que_text{
         font-size: 25px;
         font-weight: 600;
     }
-
     section .option_list{
         padding: 20px 0px;
         display: block;
     }
-
     section .option_list .option{
         background: #fff4c2;
         border: 1px solid #decf84;
@@ -290,33 +260,27 @@
         align-items: center;
         justify-content: space-between;
     }
-
     section .option_list .option:last-child{
         margin-bottom: 0px;
     }
-
     section .option_list .option:hover{
         color: #d3be4b;
         background: #fff4c2;
         border: 1px solid #decf84;
     }
-
     section .option_list .option.correct{
         color: #155724;
         background: #d4edda;
         border: 1px solid #c3e6cb;
     }
-
     section .option_list .option.incorrect{
         color: #721c24;
         background: #f8d7da;
         border: 1px solid #f5c6cb;
     }
-
     section .option_list .option.disabled{
         pointer-events: none;
     }
-
     section .option_list .option .icon{
         height: 26px;
         width: 26px;
@@ -333,13 +297,11 @@
         border-color: #23903c;
         background: #d4edda;
     }
-
     .option_list .option .icon.cross{
         color: #a42834;
         background: #f8d7da;
         border-color: #a42834;
     }
-
     footer{
         height: 60px;
         padding: 0 30px;
@@ -348,21 +310,17 @@
         justify-content: space-between;
         border-top: 1px solid lightgrey;
     }
-
     footer .total_que span{
         display: flex;
         user-select: none;
     }
-
     footer .total_que span p{
         font-weight: 500;
         padding: 0 5px;
     }
-
     footer .total_que span p:first-child{
         padding-left: 0px;
     }
-
     footer button{
         height: 40px;
         padding: 0 13px;
@@ -381,17 +339,14 @@
         transform: scale(0.95);
         transition: all 0.3s ease;
     }
-
     footer button:hover{
         background: #70579f;
     }
-
     footer button.show{
         opacity: 1;
         pointer-events: auto;
         transform: scale(1);
     }
-
     .result_box{
         background: #fff;
         border-radius: 5px;
@@ -406,35 +361,29 @@
         pointer-events: none;
         transition: all 0.3s ease;
     }
-
     .result_box .icon{
         font-size: 100px;
         color: #70579f;
         margin-bottom: 10px;
     }
-
     .result_box .complete_text{
         font-size: 20px;
         font-weight: 500;
     }
-
     .result_box .score_text span{
         display: flex;
         margin: 10px 0;
         font-size: 18px;
         font-weight: 500;
     }
-
     .result_box .score_text span p{
         padding: 0 4px;
         font-weight: 600;
     }
-
     .result_box .buttons{
         display: flex;
         margin: 20px 0;
     }
-
     .result_box .buttons button{
         margin: 0 10px;
         height: 45px;
@@ -448,27 +397,22 @@
         border: 1px solid #70579f;
         transition: all 0.3s ease;
     }
-
     .buttons button.restart{
         color: #fff;
         background: #70579f;
     }
-
     .buttons button.restart:hover{
         background: #503985;
     }
-
     .buttons button.quit{
         color: #70579f;
         background: #fff;
     }
-
     .buttons button.quit:hover{
         color: #fff;
         background: #70579f;
     }
 </style>
-
 <script>
     // creating an array and passing the number, questions, options, and answers
     let questions = [
@@ -527,10 +471,8 @@
                 "Go to the nearest classroom"
             ]
         },
-
     ];
 </script>
-
 <script>
     //selecting all required elements
     const start_btn = document.querySelector(".start_btn button");
@@ -543,17 +485,14 @@
     const time_line = document.querySelector("header .time_line");
     const timeText = document.querySelector(".timer .time_left_txt");
     const timeCount = document.querySelector(".timer .timer_sec");
-
     // if startQuiz button clicked
     start_btn.onclick = ()=>{
         info_box.classList.add("activeInfo"); //show info box
     }
-
     // if exitQuiz button clicked
     exit_btn.onclick = ()=>{
         info_box.classList.remove("activeInfo"); //hide info box
     }
-
     // if continueQuiz button clicked
     continue_btn.onclick = ()=>{
         info_box.classList.remove("activeInfo"); //hide info box
@@ -563,7 +502,6 @@
         startTimer(15); //calling startTimer function
         startTimerLine(0); //calling startTimerLine function
     }
-
     let timeValue =  15;
     let que_count = 0;
     let que_numb = 1;
@@ -571,10 +509,8 @@
     let counter;
     let counterLine;
     let widthValue = 0;
-
     const restart_quiz = result_box.querySelector(".buttons .restart");
     const quit_quiz = result_box.querySelector(".buttons .quit");
-
     // if restartQuiz button clicked
     restart_quiz.onclick = ()=>{
         quiz_box.classList.add("activeQuiz"); //show quiz box
@@ -593,15 +529,12 @@
         timeText.textContent = "Time Left"; //change the text of timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }
-
     // if quitQuiz button clicked
     quit_quiz.onclick = ()=>{
         window.location.reload(); //reload the current window
     }
-
     const next_btn = document.querySelector("footer .next_btn");
     const bottom_ques_counter = document.querySelector("footer .total_que");
-
     // if Next Que button clicked
     next_btn.onclick = ()=>{
         if(que_count < questions.length - 1){ //if question count is less than total question length
@@ -621,11 +554,9 @@
             showResult(); //calling showResult function
         }
     }
-
     // getting questions and options from array
     function showQuetions(index){
         const que_text = document.querySelector(".que_text");
-
         //creating a new span and div tag for question and option and passing the value using array index
         let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
         let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
@@ -634,9 +565,7 @@
             + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
         que_text.innerHTML = que_tag; //adding new span tag inside que_tag
         option_list.innerHTML = option_tag; //adding new div tag inside option_tag
-
         const option = option_list.querySelectorAll(".option");
-
         // set onclick attribute to all available options
         for(i=0; i < option.length; i++){
             option[i].setAttribute("onclick", "optionSelected(this)");
@@ -645,7 +574,6 @@
     // creating the new div tags which for icons
     let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
     let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
-
     //if user clicked on option
     function optionSelected(answer){
         clearInterval(counter); //clear counter
@@ -653,7 +581,6 @@
         let userAns = answer.textContent; //getting user selected option
         let correcAns = questions[que_count].answer; //getting correct answer from array
         const allOptions = option_list.children.length; //getting all option items
-
         if(userAns == correcAns){ //if user selected option is equal to array's correct answer
             userScore += 1; //upgrading score value with 1
             answer.classList.add("correct"); //adding green color to correct selected option
@@ -664,7 +591,6 @@
             answer.classList.add("incorrect"); //adding red color to correct selected option
             answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
             console.log("Wrong Answer");
-
             for(i=0; i < allOptions; i++){
                 if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
                     option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
@@ -678,7 +604,6 @@
         }
         next_btn.classList.add("show"); //show the next button if user selected any option
     }
-
     function showResult(){
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
@@ -698,7 +623,6 @@
             scoreText.innerHTML = scoreTag;
         }
     }
-
     function startTimer(time){
         counter = setInterval(timer, 1000);
         function timer(){
@@ -727,7 +651,6 @@
             }
         }
     }
-
     function startTimerLine(time){
         counterLine = setInterval(timer, 29);
         function timer(){
@@ -738,13 +661,11 @@
             }
         }
     }
-
     function queCounter(index){
         //creating a new span tag and passing the question number and total question
         let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
         bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
     }
-
 </script>
 </html>
 </html>

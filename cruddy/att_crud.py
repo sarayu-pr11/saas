@@ -2,7 +2,7 @@
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
 from flask_restful import Api, Resource
 import requests
-from crud.model import attend
+from cruddy.att_model import attend
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_attend = Blueprint('attend', __name__,
@@ -26,12 +26,12 @@ api = Api(app_attend)
 
 # User/attend extraction from SQL
 def users_all():
-    """converts Users table into JSON list """
-    return [peep.read() for peep in attend.query.all()]
+    #converts Users table into JSON list
+    return [peep.read1() for peep in attend.query.all()]
 
 
 def users_ilike(term):
-    """filter attend table by term into JSON list """
+    #filter attend table by term into JSON list 
     term = "%{}%".format(term)  # "ilike" is case insensitive and requires wrapped  %term%
     table = attend.query.filter((attend.name.ilike(term)) | (attend.fav_res.ilike(term)))
     return [peep.read() for peep in table]
@@ -39,13 +39,13 @@ def users_ilike(term):
 
 # User extraction from SQL
 def user_by_id(userid):
-    """finds User in table matching userid """
+    #finds User in table matching userid 
     return attend.query.filter_by(userID=userid).first()
 
 
 # User extraction from SQL
 def user_by_fav_res(fav_res):
-    """finds User in table matching fav_res """
+    #finds User in table matching fav_res 
     return attend.query.filter_by(fav_res=fav_res).first()
 
 
@@ -53,15 +53,15 @@ def user_by_fav_res(fav_res):
 
 
 # Default URL
-@app_attend.route('/')
+@app_attend.route('/at')
 def crud1():
     """obtains all attend from table and loads Admin Form"""
     return render_template("attendance_security_html/crud_attendance.html", table=users_all())
 
 
 # CRUD create/add
-@app_attend.route('/create/', methods=["POST"])
-def create():
+@app_attend.route('/create_at/', methods=["POST"])
+def create1():
     """gets data from form and add it to attend table"""
     if request.form:
         po = attend(
@@ -69,58 +69,58 @@ def create():
             request.form.get("fav_res"),
             request.form.get("fav_food"),
         )
-        po.create()
+        po.create1()
     return redirect(url_for('crud.crud'))
 
 
 # CRUD read
-@app_attend.route('/read/', methods=["POST"])
-def read():
+@app_attend.route('/read_at/', methods=["POST"])
+def read1():
     """gets userid from form and obtains corresponding data from attend table"""
     table = []
     if request.form:
         userid = request.form.get("userid")
         po = user_by_id(userid)
         if po is not None:
-            table = [po.read()]  # placed in list for easier/consistent use within HTML
+            table = [po.read1()]  # placed in list for easier/consistent use within HTML
     return render_template("attendance_security_html/crud_attendance.html", table=table)
 
 
 # CRUD update
-@app_attend.route('/update/', methods=["POST"])
-def update():
+@app_attend.route('/update_at/', methods=["POST"])
+def update1():
     """gets userid and name from form and filters and then data in  attend table"""
     if request.form:
         userid = request.form.get("userid")
         name = request.form.get("name")
         po = user_by_id(userid)
         if po is not None:
-            po.update(name)
+            po.update1(name)
     return redirect(url_for('crud.crud'))
 
 
 # CRUD delete
-@app_attend.route('/delete/', methods=["POST"])
-def delete():
+@app_attend.route('/delete_at/', methods=["POST"])
+def delete1():
     """gets userid from form delete corresponding record from attend table"""
     if request.form:
         userid = request.form.get("userid")
         po = user_by_id(userid)
         if po is not None:
-            po.delete()
+            po.delete1()
     return redirect(url_for('crud.crud'))
 
 
 # Search Form
 @app_attend.route('/search/')
-def search():
+def search1():
     """loads form to search attend data"""
     return render_template("search.html")
 
 
 # Search request and response
 @app_attend.route('/search/term/', methods=["POST"])
-def search_term():
+def search_term1():
     """ obtain term/search request """
     req = request.get_json()
     term = req['term']
@@ -170,7 +170,7 @@ class UsersAPI:
 
     # class for delete
     class _Delete(Resource):
-        def delete(self, userid):
+        def delete1(self, userid):
             po = user_by_id(userid)
             if po is None:
                 return {'message': f"{userid} is not found"}, 210
