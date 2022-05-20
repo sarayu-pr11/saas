@@ -22,6 +22,8 @@ Migrate(app, db)
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
+
+
 class attend(db.Model):
     # define the attend schema
     userID = db.Column(db.Integer, primary_key=True)
@@ -41,7 +43,7 @@ class attend(db.Model):
 
     # CRUD create/add a new record to the table
     # returns self or None on error
-    def create(self):
+    def create1(self):
         try:
             # creates a person object from attend(db.Model) class, passes initializers
             db.session.add(self)  # add prepares to persist person object to attend table
@@ -53,7 +55,7 @@ class attend(db.Model):
 
     # CRUD read converts self to dictionary
     # returns dictionary
-    def read(self):
+    def read1(self):
         return {
             "userID": self.userID,
             "name": self.name,
@@ -63,7 +65,7 @@ class attend(db.Model):
 
     # CRUD update: updates attend name, res, food
     # returns self
-    def update(self, name, fav_res="", fav_food=""):
+    def update1(self, name, fav_res="", fav_food=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
@@ -77,7 +79,7 @@ class attend(db.Model):
 
     # CRUD delete: remove self
     # None
-    def delete(self):
+    def delete2(self):
         db.session.delete(self)
         db.session.commit()
         return None
