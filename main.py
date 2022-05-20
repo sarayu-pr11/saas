@@ -5,7 +5,7 @@ from __init__ import app
 from cruddy.app_crud import app_crud
 app.register_blueprint(app_crud)
 
-from crud.app_crud import app_attend
+from cruddy.att_crud import app_attend
 app.register_blueprint(app_attend)
 
 # Default URL for Blueprint
@@ -13,11 +13,15 @@ app.register_blueprint(app_attend)
 def index():
     return render_template("index.html")
 
-@app.route('/quiz')
+
+
+@app.route('/attendance')
 def quiz():
-    return render_template("quiz.html")
+    return render_template("attendance_security_html/crud_attendance.html")
 
-
+#@app.route('/quiz')
+#def quiz():
+    #return render_template("quiz.html")
 
 @app.route('/maps')
 def maps():

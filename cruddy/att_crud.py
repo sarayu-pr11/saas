@@ -2,7 +2,7 @@
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
 from flask_restful import Api, Resource
 import requests
-from crud.model import attend
+from cruddy.att_model import attend
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_attend = Blueprint('attend', __name__,
@@ -61,7 +61,7 @@ def crud1():
 
 # CRUD create/add
 @app_attend.route('/create/', methods=["POST"])
-def create():
+def create1():
     """gets data from form and add it to attend table"""
     if request.form:
         po = attend(
@@ -75,7 +75,7 @@ def create():
 
 # CRUD read
 @app_attend.route('/read/', methods=["POST"])
-def read():
+def read1():
     """gets userid from form and obtains corresponding data from attend table"""
     table = []
     if request.form:
@@ -88,7 +88,7 @@ def read():
 
 # CRUD update
 @app_attend.route('/update/', methods=["POST"])
-def update():
+def update1():
     """gets userid and name from form and filters and then data in  attend table"""
     if request.form:
         userid = request.form.get("userid")
@@ -101,7 +101,7 @@ def update():
 
 # CRUD delete
 @app_attend.route('/delete/', methods=["POST"])
-def delete():
+def delete1():
     """gets userid from form delete corresponding record from attend table"""
     if request.form:
         userid = request.form.get("userid")
@@ -113,14 +113,14 @@ def delete():
 
 # Search Form
 @app_attend.route('/search/')
-def search():
+def search1():
     """loads form to search attend data"""
     return render_template("search.html")
 
 
 # Search request and response
 @app_attend.route('/search/term/', methods=["POST"])
-def search_term():
+def search_term1():
     """ obtain term/search request """
     req = request.get_json()
     term = req['term']
@@ -170,7 +170,7 @@ class UsersAPI:
 
     # class for delete
     class _Delete(Resource):
-        def delete(self, userid):
+        def delete1(self, userid):
             po = user_by_id(userid)
             if po is None:
                 return {'message': f"{userid} is not found"}, 210

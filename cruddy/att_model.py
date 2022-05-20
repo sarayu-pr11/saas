@@ -22,6 +22,8 @@ Migrate(app, db)
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
+
+
 class attend(db.Model):
     # define the attend schema
     userID = db.Column(db.Integer, primary_key=True)
