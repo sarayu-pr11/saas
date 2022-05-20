@@ -13,7 +13,7 @@
     <h1><a href={{ url_for('crud.crud_logout') }}> Log Out </a></h1>
     <h1><a href={{ url_for('attend.crud1') }}> TEACHERS CLICK HERE </a></h1>
     <center><h2 style ='...'> {{ current_user.name }} is logged in</h2></center>
-    <center><button onclick="attendance_redirect()"> click here </button></center>
+
 
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -176,9 +176,5 @@
         </div>
     </div>
 
-    <script>
-        function attendance_redirect() {
-            location.href = '/at';
-        }
-    </script>
+
 {% endblock %}
