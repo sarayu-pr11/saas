@@ -79,7 +79,7 @@ class attend(db.Model):
 
     # CRUD delete: remove self
     # None
-    def delete2(self):
+    def delete1(self):
         db.session.delete(self)
         db.session.commit()
         return None
