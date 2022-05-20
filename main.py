@@ -15,13 +15,10 @@ def index():
 
 
 
-@app.route('/attendance')
-def quiz():
-    return render_template("attendance_security_html/crud_attendance.html")
 
-#@app.route('/quiz')
-#def quiz():
-    #return render_template("quiz.html")
+@app.route('/quiz')
+def quiz():
+    return render_template("quiz.html")
 
 @app.route('/maps')
 def maps():

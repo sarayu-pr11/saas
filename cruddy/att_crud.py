@@ -53,7 +53,7 @@ def user_by_fav_res(fav_res):
 
 
 # Default URL
-@app_attend.route('/')
+@app_attend.route('/at')
 def crud1():
     """obtains all attend from table and loads Admin Form"""
     return render_template("attendance_security_html/crud_attendance.html", table=users_all())

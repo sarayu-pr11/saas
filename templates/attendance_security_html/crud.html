@@ -11,6 +11,7 @@
 <!-- CONTENT (in <body>), content for this page -->
 {% block content %}
     <h1><a href={{ url_for('crud.crud_logout') }}> Log Out </a></h1>
+    <h1><a href={{ url_for('attend.crud1') }}> TEACHERS CLICK HERE </a></h1>
     <center><h2 style ='...'> {{ current_user.name }} is logged in</h2></center>
     <center><button onclick="attendance_redirect()"> click here </button></center>
 
@@ -177,7 +178,7 @@
 
     <script>
         function attendance_redirect() {
-            location.href = '/attendance';
+            location.href = '/at';
         }
     </script>
 {% endblock %}
