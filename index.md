@@ -6,7 +6,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
 # [Scrum Board](https://github.com/sarayu-pr11/saas/projects/1)
 
 # Review Tickets (Milestone Weeks)
-<table>
+ <table>
   <tr>
     <td> Week</td>
     <td> Link to Review Ticket </td>
@@ -19,17 +19,18 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 1 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79290897">Ticket</a></td>
   </tr>
-    <tr>
+   <tr>
     <td> Week 2 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-79630639">Ticket</a></td>
     <tr>
     <td> Week 5 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/issues/12#issue-1207866734">Ticket</a></td>
   </tr>
-    <tr>
+   <tr>
     <td> Week 8 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/issues/17#issue-1234342430">Ticket</a></td>
-</table>
+  </tr>
+ </table>
   
 
 # Project Plans
@@ -74,7 +75,7 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <tr>
     <td> Week 7/8 </td>
     <td> Create Task Final Submissions/Final AP Exam Preparation </td>
-  </tr>
+    </tr>
 </table>
   
   
@@ -92,9 +93,12 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> 03/17/22 </td>
     <td> Presented team Github Page to project owner, added designs, better organized team roles information </td>
   </tr>
-  
-   <tr>
+  <tr>
     <td> 03/24/22 </td>
     <td> PII concerns/data privacy - create a log-in page as an authentication factor, Hosting plan - deploy on Mr. Mortensen's home machines, Software license - GNU General Public License v3.0 (derivatives of our work can be created with no restrictions),  </td>
+  </tr>
+  <tr>
+    <td> 05/20/22 </td>
+    <td> Homepage - add buttons for each info page, make sure databases connect to the project </td>
   </tr>
   </table>

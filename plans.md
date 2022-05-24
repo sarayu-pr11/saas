@@ -17,3 +17,8 @@ This flowchart was created in 03/08/22 after discussing project ideas as a group
 ### adding a login page to protect the privacy 
 ![image](https://user-images.githubusercontent.com/89221238/159988548-5f79cbc4-515c-4b19-a728-f9144858c104.png)
 ![image](https://user-images.githubusercontent.com/89221238/159990219-067648ee-e288-4ebe-a0cd-56266417a815.png)
+
+
+## Week 8 Updated Wireframe
+
+
