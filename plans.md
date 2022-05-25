@@ -21,4 +21,12 @@ This flowchart was created in 03/08/22 after discussing project ideas as a group
 
 ## Week 8 Updated Wireframe
 ![Home](home.png)
+![Login](login.png)
+![Attendance](attendance.png)
+![Notes](notes.png)
+![Quiz](quiz.png)
+![Map](map.png)
+![Emergency](medical_emergency.png)
+![Contact](contact.png)
+
 
