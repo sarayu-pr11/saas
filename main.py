@@ -24,9 +24,9 @@ def quiz():
 def maps():
     return render_template("maps.html")
 
-@app.route('/saumyaaboutme')
-def saumyaaboutme():
-    return render_template("aboutus/saumyaaboutme.html")
+@app.route('/speech')
+def speech():
+    return render_template("speech.html")
 
 
 
