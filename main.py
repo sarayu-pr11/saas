@@ -29,6 +29,10 @@ def speech():
     return render_template("speech.html")
 
 
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")
+
 @app.route('/BombThreat')
 def BombThreat():
     return render_template("BombThreat.html")
