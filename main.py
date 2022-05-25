@@ -13,9 +13,9 @@ app.register_blueprint(app_attend)
 def index():
     return render_template("index.html")
 
-
-
-
+@app.route('/about_us')
+def about_us():
+    return render_template("about_us.html")
 @app.route('/quiz')
 def quiz():
     return render_template("quiz.html")
@@ -24,9 +24,9 @@ def quiz():
 def maps():
     return render_template("maps.html")
 
-@app.route('/saumyaaboutme')
-def saumyaaboutme():
-    return render_template("aboutus/saumyaaboutme.html")
+@app.route('/speech')
+def speech():
+    return render_template("speech.html")
 
 
 
