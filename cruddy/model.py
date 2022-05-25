@@ -1,4 +1,5 @@
 """ database dependencies to support Users db examples """
+from random import randrange
 from __init__ import db
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -12,6 +13,47 @@ from flask_login import UserMixin
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
+class Notes(db.Model):
+    __tablename__ = 'notes'
+
+    # Define the Notes schema
+    id = db.Column(db.Integer, primary_key=True)
+    notes = db.Column(db.Text, unique=False, nullable=False)
+    # Define a relationship in Notes Schema to userID who originates the note, many-to-one (many notes to one user)
+    userID = db.Column(db.Integer, db.ForeignKey('users.userID'))
+
+    # Constructor of a Notes object, initializes of instance variables within object
+    def __init__(self, notes, userID):
+        self.notes = notes
+        self.userID = userID
+
+    # Returns a string representation of the Notes object, similar to java toString()
+    # returns string
+    def __repr__(self):
+        return "Notes(" + str(self.id) + "," + self.note + "," + str(self.userID) + ")"
+
+    # CRUD create, adds a new record to the Notes table
+    # returns the object added or None in case of an error
+    def create(self):
+        try:
+            # creates a Notes object from Notes(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to Notes table
+            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
+            return self
+        except IntegrityError:
+            db.session.remove()
+            return None
+
+    # CRUD read, returns dictionary representation of Notes object
+    # returns dictionary
+    def read(self):
+        return {
+            "id": self.id,
+            "note": self.note,
+            "userID": self.userID
+        }
+
+
 class Users(UserMixin, db.Model):
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
@@ -114,7 +156,6 @@ def model_tester():
             print(f"Records exist, duplicate email, or error: {row.email}")
 
 
-
 def model_printer():
     print("------------")
     print("Table: users with SQL query")
@@ -125,10 +166,6 @@ def model_printer():
         print(row)
 
 
-
 if __name__ == "__main__":
     model_tester()  # builds model of Users
     model_printer()
-
-
-
