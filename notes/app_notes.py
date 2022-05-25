@@ -32,7 +32,7 @@ def notes():
         if list_notes is not None:
             list_notes.reverse()
     # render user and note data in reverse chronological order
-    return render_template('', user=user, notes=list_notes)
+    return render_template('notes.html', user=user, notes=list_notes)
 
 
 # Notes create/add
