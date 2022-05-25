@@ -7,6 +7,9 @@ from flask_login import LoginManager
 # Setup of key Flask object (app)
 app = Flask(__name__)
 dbURI = 'sqlite:///model/myDB.db'
+UPLOAD_FOLDER = 'static/uploads/files/'
+# Setup SQLAlchemy object and properties for the database (db)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # Setup properties for the database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI

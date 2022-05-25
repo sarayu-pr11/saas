@@ -29,8 +29,31 @@ def speech():
     return render_template("speech.html")
 
 
+@app.route('/BombThreat')
+def BombThreat():
+    return render_template("BombThreat.html")
+
+@app.route('/Earthquakes')
+def Earthquakes():
+    return render_template("EarthquakesFires.html")
+
+@app.route('/Floods')
+def Floods():
+    return render_template("Floods.html")
+
+@app.route('/GeneralGuidelines')
+def GeneralGuidelines():
+    return render_template("GeneralGuidelines.html")
+
+@app.route('/SchoolShootings')
+def SchoolShootings():
+    return render_template("SchoolShootings.html")
+
+@app.route('/emergencycontacts')
+def emergencycontacts():
+    return render_template("emergencycontacts.html")
 
 if __name__ == "__main__" :
     # runs the application on the repl development server
-    app.run(debug=True, port="5223")
+    app.run(debug=True, port="5224")
 
