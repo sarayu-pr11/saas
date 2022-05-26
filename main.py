@@ -8,6 +8,8 @@ app.register_blueprint(app_crud)
 from cruddy.att_crud import app_attend
 app.register_blueprint(app_attend)
 
+
+
 # Default URL for Blueprint
 @app.route('/')
 def index():
@@ -33,29 +35,34 @@ def speech():
 def contact():
     return render_template("contact.html")
 
-@app.route('/BombThreat')
-def BombThreat():
-    return render_template("BombThreat.html")
+@app.route('/bomb')
+def bomb():
+    return render_template("events/bomb.html")
 
-@app.route('/Earthquakes')
+@app.route('/earthquake')
 def Earthquakes():
-    return render_template("EarthquakesFires.html")
+    return render_template("events/earthquake.html")
 
-@app.route('/Floods')
-def Floods():
-    return render_template("Floods.html")
 
-@app.route('/GeneralGuidelines')
-def GeneralGuidelines():
-    return render_template("GeneralGuidelines.html")
+@app.route('/fire')
+def fire():
+    return render_template("events/fire.html")
 
-@app.route('/SchoolShootings')
-def SchoolShootings():
-    return render_template("SchoolShootings.html")
+@app.route('/flood')
+def flood():
+    return render_template("events/flood.html")
+
+@app.route('/guidelines')
+def guidlines():
+    return render_template("events/guidlines.html")
+
+@app.route('/shooting')
+def shootings():
+    return render_template("events/shootings.html")
 
 @app.route('/emergencycontacts')
 def emergencycontacts():
-    return render_template("emergencycontacts.html")
+    return render_template("events/emergencycontacts.html")
 
 if __name__ == "__main__" :
     # runs the application on the repl development server
