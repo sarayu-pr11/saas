@@ -60,7 +60,7 @@ def crud1():
 
 
 # CRUD create/add
-@app_attend.route('/create_at/', methods=["POST"])
+@app_attend.route('/at', methods=["POST"])
 def create1():
     """gets data from form and add it to attend table"""
     if request.form:
@@ -70,11 +70,11 @@ def create1():
             request.form.get("fav_food"),
         )
         po.create1()
-    return redirect(url_for('crud.crud'))
+    return redirect("at")
 
 
 # CRUD read
-@app_attend.route('/read_at/', methods=["POST"])
+@app_attend.route('/read_at', methods=["POST"])
 def read1():
     """gets userid from form and obtains corresponding data from attend table"""
     table = []
