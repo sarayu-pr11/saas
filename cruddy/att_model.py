@@ -32,7 +32,6 @@ class attend(db.Model):
     fav_food = db.Column(db.String(255), unique=False, nullable=False)
 
 
-
     # constructor of a User object, initializes of instance variables within object
     def __init__(self, name, fav_res, fav_food):
         self.name = name
@@ -65,7 +64,7 @@ class attend(db.Model):
 
     # CRUD update: updates attend name, res, food
     # returns self
-    def update1(self, name, fav_res="", fav_food=""):
+    def update1(self, name="", fav_res="", fav_food=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
@@ -94,12 +93,12 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = attend(name='Aadya Daita', fav_res='subway', fav_food='Italian')
-    u2 = attend(name='Athena Wu', fav_res='subway', fav_food='Italian')
-    u3 = attend(name='Gaurish Gaur', fav_res='subway', fav_food='Italian')
-    u4 = attend(name='Karthik Valluri', fav_res='subway', fav_food='Italian')
+    u1 = attend(name='Aadya Daita', fav_res='subway', fav_food='true')
+    u2 = attend(name='Athena Wu', fav_res='subway', fav_food='false')
+    u3 = attend(name='Gaurish Gaur', fav_res='subway', fav_food='true')
 
-    table = [u1, u2, u3, u4]
+
+    table = [u1, u2, u3]
     for row in table:
         try:
             db.session.add(row)

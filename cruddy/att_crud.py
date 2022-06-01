@@ -44,9 +44,9 @@ def user_by_id(userid):
 
 
 # User extraction from SQL
-def user_by_fav_res(fav_res):
+def user_by_fav_food(fav_food):
     #finds User in table matching fav_res 
-    return attend.query.filter_by(fav_res=fav_res).first()
+    return attend.query.filter_by(fav_food=fav_food).first()
 
 
 """ app route section """
@@ -65,9 +65,9 @@ def create1():
     """gets data from form and add it to attend table"""
     if request.form:
         po = attend(
-            request.form.get("name"),
-            request.form.get("fav_res"),
             request.form.get("fav_food"),
+            request.form.get("fav_res"),
+            request.form.get("name"),
         )
         po.create1()
     return redirect("at")
@@ -89,13 +89,13 @@ def read1():
 # CRUD update
 @app_attend.route('/update_at/', methods=["POST"])
 def update1():
-    """gets userid and name from form and filters and then data in  attend table"""
+    """gets userid and absent from form and filters and then data in  attend table"""
     if request.form:
         userid = request.form.get("userid")
-        name = request.form.get("name")
+        absent = request.form.get("absent")
         po = user_by_id(userid)
         if po is not None:
-            po.update1(name)
+            po.update1(absent)
     return redirect(url_for('crud.crud'))
 
 
@@ -139,7 +139,7 @@ class UsersAPI:
             person = po.create()
             if person:
                 return person.read()
-            return {'message': f'Processed {name}'}, 210
+            return {'message': f'Processed {fav_food}'}, 210
 
     # class for read/get
     class _Read(Resource):
@@ -153,20 +153,20 @@ class UsersAPI:
 
     # class for update/put
     class _Update(Resource):
-        def put(self, name):
-            po = user_by_fav_res(fav_res)
+        def put(self, fav_food):
+            po = user_by_fav_food(fav_food)
             if po is None:
-                return {'message': f"{fav_res} is not found"}, 210
-            po.update(name)
-            return po.read()
+                return {'message': f"{fav_food} is not found"}, 210
+            po.update(fav_food)
+            return po.read1()
 
     class _UpdateAll(Resource):
-        def put(self, fav_res, name, password, phone):
-            po = user_by_fav_res(fav_res)
+        def put(self, fav_food, name, password, phone):
+            po = user_by_fav_food(fav_food)
             if po is None:
-                return {'message': f"{fav_res} is not found"}, 210
-            po.update(name, password, phone)
-            return po.read()
+                return {'message': f"{fav_food} is not found"}, 210
+            po.update(fav_food, password, phone)
+            return po.read1()
 
     # class for delete
     class _Delete(Resource):
@@ -182,8 +182,8 @@ class UsersAPI:
     api.add_resource(_Create, '/create/<string:name>/<string:fav_res>/<string:password>/<string:phone>')
     api.add_resource(_Read, '/read/')
     api.add_resource(_ReadILike, '/read/ilike/<string:term>')
-    api.add_resource(_Update, '/update/<string:fav_res>/<string:name>')
-    api.add_resource(_UpdateAll, '/update/<string:fav_res>/<string:name>/<string:password>/<string:phone>')
+    api.add_resource(_Update, '/update/<string:fav_food>/<string:name>')
+    api.add_resource(_UpdateAll, '/update/<string:fav_food>/<string:name>/<string:password>/<string:phone>')
     api.add_resource(_Delete, '/delete/<int:userid>')
 
 

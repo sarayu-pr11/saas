@@ -37,9 +37,9 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Absent?</th>
+                                <th>Phone Number</th>
                                 <th>Name</th>
-                                <th>Favorite Restaurant</th>
-                                <th>Favorite Type of Food</th>
 
                             </tr>
                             </thead>
@@ -78,18 +78,18 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th><label for="name">Name</label></th>
-                            <th><label for="fav_res">Favorite Restaurant</label></th>
+                            <th><label for="fav_food">Absent?</label></th>
+                            <th><label for="fav_res">Phone Number</label></th>
 
-                            <th><label for="fav_food">Favorite Type of Food</label></th>
+                            <th><label for="name">Name</label></th>
 
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="text" name="name" id="name" required></td>
-                            <td><input type="text" name="fav_res" id="fav_res" required></td>
                             <td><input type="text" name="fav_food" id="fav_food" required></td>
+                            <td><input type="text" name="fav_res" id="fav_res" required></td>
+                            <td><input type="text" name="name" id="name" required></td>
 
 
                             <td><input type="submit" value="Create"></td>
@@ -138,7 +138,7 @@
                             <table id="update_table">
                                 <tr>
                                     <th><label for="update_userid">ID</label></th>
-                                    <th><label for="update_name">Name</label></th>
+                                    <th><label for="update_absent">Absent?</label></th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -150,7 +150,7 @@
                                             </optgroup>
                                         </select>
                                     </td>
-                                    <td><input type="text" name="name" id="update_name" required></td>
+                                    <td><input type="text" name="absent" id="update_absent" required></td>
                                     <td><input type="submit" value="Update"></td>
                                 </tr>
                             </table>
