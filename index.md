@@ -30,6 +30,10 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <td> Week 8 </td>
     <td> <a href="https://github.com/sarayu-pr11/saas/issues/17#issue-1234342430">Ticket</a></td>
   </tr>
+   <tr>
+    <td> Final</td>
+    <td> <a href="https://github.com/sarayu-pr11/saas/projects/1#card-82683752)">Ticket</a></td>
+  </tr>
  </table>
   
 
@@ -75,6 +79,10 @@ Our goal this trimester with our website is to make a helpful and viable alterna
     <tr>
     <td> Week 7/8 </td>
     <td> Create Task Final Submissions/Final AP Exam Preparation </td>
+    </tr>
+    <tr>
+    <td> Final Week </td>
+    <td> Finished project </td>
     </tr>
 </table>
   
